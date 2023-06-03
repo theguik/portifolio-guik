@@ -116,21 +116,21 @@ const articles = () => {
     <TransitionEffect />
     <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
         <Layout className='pt-16'>
-            <AnimatedText text="Artigos" className='mb-16 lg:!text-7l sm:mb-8 sm:!text-6xl xs:!text4xl'/>
+            <AnimatedText text="Futuros Artigos" className='mb-16 lg:!text-7l sm:mb-8 sm:!text-6xl xs:!text4xl'/>
             <ul className='grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16'>
                 <FeaturedArticle 
-                title="Como ser feio e conseguir namorar ? - Dicas do Guiga"
+                title="Artigo 1 - teste"
                 
-                summary="Você olha pra mim e pensa: como esse cara conseguiu namorar? A resposta: Uma galinha, 2 garrafas de 51 e uma vela preta. Saiba mais..."
-                time="9 min de leitura"
+                summary="Aqui terá uma breve descrição sobre o artigo em questão"
+                time="X min de leitura"
                 link="/"
                 img={article1} />
 
                 <FeaturedArticle 
-                title="10 dicks de como superar o Manoel Gomes"
+                title="Artigo 2 - teste"
                 
-                summary="Aqui te dou dicas de como superar o maior conquistador do século 2023, é difícil, porém possível."
-                time="9 min de leitura"
+                summary="Aqui terá uma breve descrição sobre o artigo em questão"
+                time="X min de leitura"
                 link="/"
                 img={article2}
                 
@@ -140,7 +140,7 @@ const articles = () => {
             <ul>
             <Articles
             
-                title="Quer ser bom no valorant? Use Drogas!"
+                title="Artigo 3 - Teste"
                 date="May 30, 2023"
                 link="/"
                 img={article3}
@@ -148,7 +148,7 @@ const articles = () => {
             />
             <Articles
             
-            title="Cansado de pegar dragões? Caiote pode te ajudar!"
+            title="Artigo 3 - Teste"
             date="May 30, 2023"
             link="/"
             img={article4}
@@ -156,7 +156,7 @@ const articles = () => {
         />
         <Articles
             
-            title="Porque o Hiro é o melhor streamer da atualidade?"
+            title="Artigo 3 - Teste"
             date="May 30, 2023"
             link="/"
             img={article5}
@@ -164,7 +164,7 @@ const articles = () => {
         />
         <Articles
             
-            title="Dicas de como sobreviver na festa fantasia do gui"
+            title="Artigo 3 - Teste"
             date="May 30, 2023"
             link="/"
             img={article4}
@@ -172,7 +172,7 @@ const articles = () => {
         />
         <Articles
             
-            title="Como ter seu visto americano de estudante negado: saiba mais"
+            title="Artigo 3 - Teste"
             date="May 30, 2023"
             link="/"
             img={article5}

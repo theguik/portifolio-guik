@@ -120,7 +120,7 @@ const projects = () => {
             <FeaturedProject
                 title="Meus Maiores Medos"
                 img={project1}
-                summary=" Uma música feita em momentos tristes que provavelmente se tornaram traumas que afetam meu psicológico até hoje. "
+                summary=" Resolvi Colocar alguns projetos de músicas feitos por mim enquanto não tenho projetos o suficiente para apresentar. "
                 link="https://www.youtube.com/watch?v=3HeWBUNVI_0"
                 github="/"
                 type="Featured Project"
@@ -149,7 +149,7 @@ const projects = () => {
             <FeaturedProject
                 title="Scar"
                 img={project4}
-                summary=" Um feat de algo que era para ser um projeto grande e no fim acabei não postando todas as músicas, porém ficou muito legal. "
+                summary=" Resolvi Colocar alguns projetos de músicas feitos por mim enquanto não tenho projetos o suficiente para apresentar. "
                 link="https://www.youtube.com/watch?v=DQJDflDRIsY"
                 github="/"
                 type="Featured Project"

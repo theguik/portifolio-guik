@@ -84,7 +84,7 @@ const NavBar = () => {
                 <motion.a href="https://www.twitter.com/the_guik" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
                 <TwitterIcon />
                 </motion.a>
-                <motion.a href="https://github.com" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
+                <motion.a href="https://github.com/theguik" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
                     <GithubIcon />
                     </motion.a>
                 <motion.a href="https://www.linkedin.com/in/guilherme-munhos-brandão-de-mattos/" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
@@ -133,7 +133,7 @@ const NavBar = () => {
              className="w-6 mx-3 sm:mx-1">
             <TwitterIcon />
             </motion.a>
-            <motion.a href="https://github.com" target={'_blank'} whileHover={{y:-2}} 
+            <motion.a href="https://github.com/theguik" target={'_blank'} whileHover={{y:-2}} 
             whileTap = {{scale:0.9}} 
             className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark rounded-full ">
                 <GithubIcon />
