@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import Logo from './Logo'
-import {TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, SunIcon, MoonIcon, InstagramIcon } from './Icons'
+import {TwitterIcon, GithubIcon, LinkedInIcon, SunIcon, MoonIcon, InstagramIcon } from './Icons'
 import {motion} from "framer-motion"
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 import { useState } from 'react'
@@ -87,7 +87,7 @@ const NavBar = () => {
                 <motion.a href="https://github.com/theguik" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
                     <GithubIcon />
                     </motion.a>
-                <motion.a href="https://www.linkedin.com/in/guilherme-munhos-brandão-de-mattos/" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
+                <motion.a href="https://www.linkedin.com/in/guilherme-munhos/" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
                     <LinkedInIcon />
                 </motion.a>
                 <motion.a href="https://www.instagram.com/theguikk/" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
@@ -138,7 +138,7 @@ const NavBar = () => {
             className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark rounded-full ">
                 <GithubIcon />
                 </motion.a>
-            <motion.a href="https://www.linkedin.com/in/guilherme-munhos-brandão-de-mattos/" target={'_blank'}
+            <motion.a href="https://www.linkedin.com/in/guilherme-munhos/" target={'_blank'}
              whileHover={{y:-2}}
               whileTap = {{scale:0.9}} 
              className="w-6 mx-3 sm:mx-1">
