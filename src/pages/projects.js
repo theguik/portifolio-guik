@@ -8,15 +8,14 @@ import { GithubIcon } from '@/components/Icons'
 import project1 from "../../public/images/projects/musica.png";
 import project2 from "../../public/images/projects/musica2.png";
 import project3 from "../../public/images/projects/musica3.png";
-import project4 from "../../public/images/projects/musica4.png";
-import project5 from "../../public/images/projects/musica5.png";
-import project6 from "../../public/images/projects/musica6.png";
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect';
+ 
 
 const FramerImage = motion(Image);
+ 
 
-const FeaturedProject =({type, title, summary, img, link, github}) =>{
+const FeaturedProject =({type, title, summary, img, link, music}) =>{
     return(
         <article className='w-full flex items-center justify-between rounded-2xl
         border border-solid border-dark bg-light shadow-2xl p-12 relative dark:bg-dark dark:border-light
@@ -42,15 +41,12 @@ const FeaturedProject =({type, title, summary, img, link, github}) =>{
                     <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                 </Link>
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
-                <div className=' mt-2 flex items-center'>
-                <Link href={github} target='_blank' className='w-10'> <GithubIcon /></Link>
-                <Link href={link} target='_blank' 
-                className='ml-4 rounded-lg bg-dark text-light border border-solid border-dark p-2 px-6 text-lg font-semibold hover:bg-light hover:text-dark
-                dark:text-dark dark:bg-light dark:border-light dark:hover:bg-dark dark:hover:text-light
-                sm:px-4 sm:text-base
-                '> Visite o Projeto</Link>
+        
+              
+                  <audio className='w-full h-20' controls loop>
+                <source src={music} type="audio/mp4"/> Seu navegador não possui suporte ao elemento audio
+                </audio>
                 </div>
-            </div>
 
         </article>
     )
@@ -105,76 +101,52 @@ const projects = () => {
   return (
     <>
     <Head>
-        <title>Guik | Projetos</title>
+        <title>Musicas</title>
         <meta name="description" content="any description" />
     </Head>
     <TransitionEffect />
     <main className='w-full mb-16 flex flex-col items-center jusitfy-center dark:text-light'>
         <Layout className='pt-16'>
             <AnimatedText 
-            text="Minhas Criações" 
+            text="minha maior inspiração" 
             className='mb-16 lg:!text-7l sm:mb-8 sm:!text-6xl xs:!text4xl'/>
     
         <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-x-24 sm:gap-x-0'>
+            
             <div className='col-span-12'>
             <FeaturedProject
-                title="Meus Maiores Medos"
+                title="Dama da Lei"
                 img={project1}
                 summary=" Resolvi Colocar alguns projetos de músicas feitos por mim enquanto não tenho projetos o suficiente para apresentar. "
                 link="https://www.youtube.com/watch?v=3HeWBUNVI_0"
-                github="/"
-                type="Featured Project"
+                music = "damadalei.mp3"
                  />
 
+                
+
             </div>
-            <div className='col-span-6 sm:col-span-12'>
-            <Project
-                title="Pensa que me engana"
-                img={project2}
-                link="https://www.youtube.com/watch?v=BhifGxtXDIw"
-                github="/"
-                type="Featured Project"
-                 />
-            </div>
-            <div className='col-span-6 sm:col-span-12'>
-            <Project
-                title="Leões do Coliseu"
-                img={project3}
-                link="https://www.youtube.com/watch?v=KSzFyRVeABw"
-                github="/"
-                type="Featured Project"
-                 />
-            </div>
+           
             <div className='col-span-12'>
             <FeaturedProject
-                title="Scar"
-                img={project4}
+                 title="Esperando às 18h"
+                img={project2}
                 summary=" Resolvi Colocar alguns projetos de músicas feitos por mim enquanto não tenho projetos o suficiente para apresentar. "
-                link="https://www.youtube.com/watch?v=DQJDflDRIsY"
-                github="/"
-                type="Featured Project"
+                link="https://www.youtube.com/watch?v=3HeWBUNVI_0"
+                music = "esperando-as-18.mp3"
                  />
             </div>
-            <div className='col-span-6 sm:col-span-12'>
-            <Project
-                title="Astro"
-                img={project5}
-                link="https://www.youtube.com/watch?v=bODAiQvxFMI"
-                github="/"
-                type="Featured Project"
-                 />
-            </div>
-            <div className='col-span-6 sm:col-span-12'>
-            <Project
-                title="Missão de te esquecer"
-                img={project6}
-                link="https://www.youtube.com/watch?v=3enbHmN0OuM"
-                github="/"
-                type="Featured Project"
-                 />
-            </div>
-        </div>
 
+              <div className='col-span-12'>
+            <FeaturedProject
+              title="Namora comigo?"
+                img={project3}
+                summary=" Resolvi Colocar alguns projetos de músicas feitos por mim enquanto não tenho projetos o suficiente para apresentar. "
+                link="https://www.youtube.com/watch?v=3HeWBUNVI_0"
+                music = "natalie2.mp3"
+                 />
+            </div>
+
+            </div>
         </Layout>
     </main>
     </>

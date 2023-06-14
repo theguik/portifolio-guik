@@ -6,12 +6,12 @@ const Footer = () => {
     return (
        <footer className='w-full border-t-2 border-solid border-dark font-medium text-lg dark:border-light dark:text-light sm:text-base'> 
           <Layout className='py-8 flex items-center justify-between lg:flex-col lg:py-6 '>
-            <span>©{new Date().getFullYear()} Guik All Rights Reserved.</span>
+            <span>©{new Date().getFullYear()} Guik Todos os Direitos Reservados.</span>
             <div className='flex items-center lg:py-2'>
             Build With <span className='text-primary dark:text-primaryDark text-2x1 px-1'> &#9825;</span>
-            by&nbsp;<Link href="https://www.linkedin.com/in/guilherme-munhos-brandão-de-mattos/" className='underline underline-offset-2 ' target='_blank'>Guik</Link>
+            by&nbsp;<Link href="/" className='underline underline-offset-2 ' target='_blank'>Guik</Link>
             </div>
-            <Link href="https://www.linkedin.com/in/guilherme-munhos-brandão-de-mattos/" className='underline underline-offset-2 ' target='_blank'>Diga olá!</Link>
+            <Link href="/" className='underline underline-offset-2 ' target='_blank'>Eu te amo tanto</Link>
           </Layout>
        </footer>
     )

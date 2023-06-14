@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import Logo from './Logo'
-import {TwitterIcon, GithubIcon, LinkedInIcon, SunIcon, MoonIcon, InstagramIcon } from './Icons'
+import { SunIcon, MoonIcon,} from './Icons'
 import {motion} from "framer-motion"
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 import { useState } from 'react'
@@ -73,25 +73,25 @@ const NavBar = () => {
             </button>
             <div className=' w-full flex justify-between items-center lg:hidden'>
             <nav>
-                <CustomLink href="/" title="Home" className='mr-4'/>
-                <CustomLink href="/about" title="Sobre" className='mx-4'/>
-                <CustomLink href="/projects" title="Projetos" className='mx-4'/>
-                <CustomLink href="/articles" title="Artigos" className='ml-4'/>
+                <CustomLink href="/" title="Te amo" className='mr-4'/>
+                <CustomLink href="/about" title="Poesias" className='mx-4'/>
+                <CustomLink href="/projects" title="Musicas" className='mx-4'/>
+                <CustomLink href="/articles" title="Fotos" className='ml-4'/>
             
             </nav> 
             
             <nav className="flex items-center justify-center flex-wrap">
-                <motion.a href="https://www.twitter.com/the_guik" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
-                <TwitterIcon />
+                <motion.a href="/" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
+                <span className='text-primary dark:text-primaryDark text-3xl px-1'> &#9825;</span>
                 </motion.a>
-                <motion.a href="https://github.com/theguik" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
-                    <GithubIcon />
+                <motion.a href="/" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
+                    <span className='text-primary dark:text-primaryDark text-3xl px-1'> &#9825;</span>
                     </motion.a>
-                <motion.a href="https://www.linkedin.com/in/guilherme-munhos/" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
-                    <LinkedInIcon />
+                <motion.a href="/" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
+                    <span className='text-primary dark:text-primaryDark text-3xl px-1'> &#9825;</span>
                 </motion.a>
-                <motion.a href="https://www.instagram.com/theguikk/" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
-                 <InstagramIcon />
+                <motion.a href="/" target={'_blank'} whileHover={{y:-2}} whileTap = {{scale:0.9}} className="w-6 mx-3">
+                 <span className='text-primary dark:text-primaryDark text-3xl px-1'> &#9825;</span>
                 </motion.a>
                 <button onClick={()=>
                     setMode(mode === "light" ? "dark" : "light")
@@ -119,36 +119,36 @@ const NavBar = () => {
             bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
             '>
             <nav className='flex items-center flex-col justify-center '>
-                <CustomMobileLink href="/" title="Home" className='' toggle={handleClick}/>
-                <CustomMobileLink href="/about" title="Sobre" className='' toggle={handleClick}/>
-                <CustomMobileLink href="/projects" title="Projetos" className='' toggle={handleClick}/>
-                <CustomMobileLink href="/articles" title="Artigos" className='' toggle={handleClick}/>
+                <CustomMobileLink href="/" title="Te amo" className='' toggle={handleClick}/>
+                <CustomMobileLink href="/about" title="Poesias" className='' toggle={handleClick}/>
+                <CustomMobileLink href="/projects" title="Musicas" className='' toggle={handleClick}/>
+                <CustomMobileLink href="/articles" title="Fotos" className='' toggle={handleClick}/>
             
             </nav> 
             
           
             <nav className="flex items-center justify-center flex-wrap mt-2">
-            <motion.a href="https://www.twitter.com/the_guik" target={'_blank'} whileHover={{y:-2}}
+            <motion.a href="/" target={'_blank'} whileHover={{y:-2}}
              whileTap = {{scale:0.9}} 
              className="w-6 mx-3 sm:mx-1">
-            <TwitterIcon />
+            <span className='text-primary dark:text-primaryDark text-3xl px-1'> &#9825;</span>
             </motion.a>
-            <motion.a href="https://github.com/theguik" target={'_blank'} whileHover={{y:-2}} 
+            <motion.a href="/" target={'_blank'} whileHover={{y:-2}} 
             whileTap = {{scale:0.9}} 
-            className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark rounded-full ">
-                <GithubIcon />
+            className="w-6 mx-3 sm:mx-1 rounded-full rounded-full ">
+                <span className='text-primary dark:text-primaryDark text-3xl px-1'> &#9825;</span>
                 </motion.a>
-            <motion.a href="https://www.linkedin.com/in/guilherme-munhos/" target={'_blank'}
+            <motion.a href="/" target={'_blank'}
              whileHover={{y:-2}}
               whileTap = {{scale:0.9}} 
              className="w-6 mx-3 sm:mx-1">
-                <LinkedInIcon />
+                <span className='text-primary dark:text-primaryDark text-3xl px-1'> &#9825;</span>
             </motion.a>
 
-            <motion.a href="https://www.instagram.com/theguikk/" target={'_blank'} whileHover={{y:-2}} 
+            <motion.a href="/" target={'_blank'} whileHover={{y:-2}} 
              whileTap = {{scale:0.9}}
-             className="w-6 mx-3 sm:mx-1 dark:bg-dark bg-light rounded-full">
-             <InstagramIcon />
+             className="w-6 mx-3 sm:mx-1 rounded-full">
+             <span className='text-primary dark:text-primaryDark text-3xl px-1'> &#9825;</span>
              
              </motion.a>
             <button 

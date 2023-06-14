@@ -1,0 +1,19 @@
+let itensColetados = ["capa", "arco", "espada", "machado", "escudo", "comida", "sapato", "capacete"]
+
+let itemNecessario1 = "machado"
+
+let itemNecessario2 = "chinelo"
+
+let itemNecessario3 = "sapato"
+
+const temItem1 = itensColetados.includes(itemNecessario1);
+const temItem2 = itensColetados.includes(itemNecessario2);
+const temItem3 = itensColetados.includes(itemNecessario3);
+
+if (temItem1 && temItem2 && temItem3) {
+    console.log("PODE ENFRENTAR");
+  } else {
+    console.log("NAO PODE ENFRENTAR");
+  }
+
+
