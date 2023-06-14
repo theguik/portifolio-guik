@@ -3,9 +3,6 @@ import Layout from '@/components/Layout'
 import Image from 'next/image'
 import profilePic from '../../public/images/profile/picprincipal.png';
 import AnimatedText from '@/components/AnimatedText';
-import Link from 'next/link';
-import { LinkArrow } from '@/components/Icons';
-import HireMe from '@/components/HireMe';
 import lightBulb from "../../public/images/svgs/heart.png";
 import TransitionEffect from '@/components/TransitionEffect';
 

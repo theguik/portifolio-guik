@@ -135,7 +135,7 @@ const NavBar = () => {
             </motion.a>
             <motion.a href="/" target={'_blank'} whileHover={{y:-2}} 
             whileTap = {{scale:0.9}} 
-            className="w-6 mx-3 sm:mx-1 rounded-full rounded-full ">
+            className="w-6 mx-3 sm:mx-1 ">
                 <span className='text-primary dark:text-primaryDark text-3xl px-1'> &#9825;</span>
                 </motion.a>
             <motion.a href="/" target={'_blank'}
