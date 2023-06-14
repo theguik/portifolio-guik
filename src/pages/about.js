@@ -1,42 +1,10 @@
-import React, { use, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Head from 'next/head'
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
-import Image from 'next/image'
-import { useInView, useMotionValue, useSpring } from 'framer-motion';
-import { motion } from 'framer-motion';
 import TransitionEffect from '@/components/TransitionEffect';
 
-    const AnimatedNumbers = ({value}) => {
-    const ref = useRef(null);
-
-
-    const motionValue = useMotionValue(0);
-    const springValue = useSpring(motionValue, {duration: 3000});
-    const isInView = useInView(ref, {once: true});
-
-    useEffect(() => {
-        if(isInView){
-            motionValue.set(value);
-        }
-    }, [isInView, value, motionValue])
-
-    useEffect(() => {
-     springValue.on("change", (latest) => {
-
-        if(ref.current && latest.toFixed(0) <= value){
-            ref.current.textContent = latest.toFixed(0);
-        }
-
-     })
-    }, [springValue, value])
-    
-    
-
-    return<span ref={ref}></span>
-
-}
-
+  
 const about = () => {
   return (
     <>
@@ -112,30 +80,30 @@ const about = () => {
              bg-light dark:bg-dark dark:border-light p-8 xl:col-span-4 md:order-1 md:col-span-8
              '>
                 <h2 className='mb-4 text-center text-lg font-bold uppercase text-dark/75 dark:text-light/75'>que já presenciei</h2>
-           <p className='text-center font-medium'>Bom dia meu amor, eu imagino que esteja acordando agora</p>
-<p className='text-center font-medium'>Espero que tenha dormido bem, e que esteja melhor ainda essa hora</p>
-<p className='text-center font-medium'>Quando estamos juntos eu odeio tanto a hora de ir embora</p>
-<p className='text-center font-medium'>E odeio mais ainda se por minha causa seu peito chora</p>
-<p className='text-center font-medium'>Nos conhecemos 5 meses atrás, e a cada dia que se passa sei que te amo cada vez mais</p>
-<p className='text-center font-medium'>Num momento que a vida leva coisas que eu queria, pelo visto ela também traz</p>
-<p className='text-center font-medium'>Porque é inexplicável o tanto que eu consigo sentir que te amo</p>
-<p className='text-center font-medium'>Algo que eu não consegui sentir por pelo menos 3 anos</p>
-<p className='text-center font-medium'>E você foi a princesa que acabou desbloqueando</p>
-<p className='text-center font-medium'>Temos algumas memórias juntos, mas isso é só um pouco de muitas que teremos passado</p>
-<p className='text-center font-medium'>Conhecerei o mundo com um sorriso no rosto e um mundo ao meu lado</p>
-<p className='text-center font-medium'>Confesso, tô apaixonado e você é a mulher mais incrível que eu quero ter em todos os momentos</p>
-<p className='text-center font-medium'>Eu sinto borboletas no estômago e uma explosão no seu beijo maior que coca-cola e mentos</p>
-<p className='text-center font-medium'>Garota, todos os dias eu tenho 48h de você nos pensamentos</p>
-<p className='text-center font-medium'>E mesmo eu não sendo o melhor sempre, juro que o que eu fizer nunca será pra ferir seus sentimentos</p>
-<p className='text-center font-medium'>Você tem um grande espaço no meu coração, e daqui a pouco a pequena casa construída em janeiro... Vira uma mansão</p>
-<p className='text-center font-medium'>Porque em pouco tempo, é como se você transformasse 10 reais em um milhão</p>
-<p className='text-center font-medium'>Você é toda a riqueza que eu quero ter nas mãos</p>
-<p className='text-center font-medium'>Chegar em casa e provar até a azeitona no seu macarrão</p>
-<p className='text-center font-medium'>Olhar pra você, te dar um beijo e pensar... "porra, que mulherão"</p>
-<p className='text-center font-medium'>Você é a dama da lei com quem eu quero construir minha trajetória</p>
-<p className='text-center font-medium'>A que vai enxergar minhas derrotas e vitórias</p>
-<p className='text-center font-medium'>E vai ser a vitória mais bonita da minha história</p>
-<p className='text-center font-medium'>Já que o ret não cantou libertina, então escuta um pouquinho revendo nossas memórias.</p>
+            <p className='text-center font-medium'>Bom dia meu amor, eu imagino que esteja acordando agora</p>
+            <p className='text-center font-medium'>Espero que tenha dormido bem, e que esteja melhor ainda essa hora</p>
+            <p className='text-center font-medium'>Quando estamos juntos eu odeio tanto a hora de ir embora</p>
+            <p className='text-center font-medium'>E odeio mais ainda se por minha causa seu peito chora</p>
+            <p className='text-center font-medium'>Nos conhecemos 5 meses atrás, e a cada dia que se passa sei que te amo cada vez mais</p>
+            <p className='text-center font-medium'>Num momento que a vida leva coisas que eu queria, pelo visto ela também traz</p>
+            <p className='text-center font-medium'>Porque é inexplicável o tanto que eu consigo sentir que te amo</p>
+            <p className='text-center font-medium'>Algo que eu não consegui sentir por pelo menos 3 anos</p>
+            <p className='text-center font-medium'>E você foi a princesa que acabou desbloqueando</p>
+            <p className='text-center font-medium'>Temos algumas memórias juntos, mas isso é só um pouco de muitas que teremos passado</p>
+            <p className='text-center font-medium'>Conhecerei o mundo com um sorriso no rosto e um mundo ao meu lado</p>
+            <p className='text-center font-medium'>Confesso, tô apaixonado e você é a mulher mais incrível que eu quero ter em todos os momentos</p>
+            <p className='text-center font-medium'>Eu sinto borboletas no estômago e uma explosão no seu beijo maior que coca-cola e mentos</p>
+            <p className='text-center font-medium'>Garota, todos os dias eu tenho 48h de você nos pensamentos</p>
+            <p className='text-center font-medium'>E mesmo eu não sendo o melhor sempre, juro que o que eu fizer nunca será pra ferir seus sentimentos</p>
+            <p className='text-center font-medium'>Você tem um grande espaço no meu coração, e daqui a pouco a pequena casa construída em janeiro... Vira uma mansão</p>
+            <p className='text-center font-medium'>Porque em pouco tempo, é como se você transformasse 10 reais em um milhão</p>
+            <p className='text-center font-medium'>Você é toda a riqueza que eu quero ter nas mãos</p>
+            <p className='text-center font-medium'>Chegar em casa e provar até a azeitona no seu macarrão</p>
+            <p className='text-center font-medium'>Olhar pra você, te dar um beijo e pensar... "porra, que mulherão"</p>
+            <p className='text-center font-medium'>Você é a dama da lei com quem eu quero construir minha trajetória</p>
+            <p className='text-center font-medium'>A que vai enxergar minhas derrotas e vitórias</p>
+            <p className='text-center font-medium'>E vai ser a vitória mais bonita da minha história</p>
+            <p className='text-center font-medium'>Já que o ret não cantou libertina, então escuta um pouquinho revendo nossas memórias.</p>
         </div>
         
         </div>
