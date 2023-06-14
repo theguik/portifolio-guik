@@ -40,8 +40,6 @@ const FeaturedProject =({type, title, summary, img, link, music}) =>{
                 <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
                     <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                 </Link>
-                <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
-        
               
                   <audio className='w-full h-20' controls loop>
                 <source src={music} type="audio/mp4"/> Seu navegador não possui suporte ao elemento audio
@@ -117,8 +115,7 @@ const projects = () => {
             <FeaturedProject
                 title="Dama da Lei"
                 img={project1}
-                summary=" Resolvi Colocar alguns projetos de músicas feitos por mim enquanto não tenho projetos o suficiente para apresentar. "
-                link="https://www.youtube.com/watch?v=3HeWBUNVI_0"
+                link="/projects"
                 music = "damadalei.mp3"
                  />
 
@@ -130,8 +127,7 @@ const projects = () => {
             <FeaturedProject
                  title="Esperando às 18h"
                 img={project2}
-                summary=" Resolvi Colocar alguns projetos de músicas feitos por mim enquanto não tenho projetos o suficiente para apresentar. "
-                link="https://www.youtube.com/watch?v=3HeWBUNVI_0"
+                link="/projects"
                 music = "esperando-as-18.mp3"
                  />
             </div>
@@ -140,8 +136,7 @@ const projects = () => {
             <FeaturedProject
               title="Namora comigo?"
                 img={project3}
-                summary=" Resolvi Colocar alguns projetos de músicas feitos por mim enquanto não tenho projetos o suficiente para apresentar. "
-                link="https://www.youtube.com/watch?v=3HeWBUNVI_0"
+                link="/projects"
                 music = "natalie2.mp3"
                  />
             </div>
