@@ -51,7 +51,7 @@ const about = () => {
 <p className='text-center font-medium'>Água fria sua tristeza dói mais que o gelo em cachoeira. Quero ser quem te aquece, ilumina, molha e seca</p>
 <p className='text-center font-medium'>Sua voz e sorriso são a chave que me liberta e ainda sim é a flecha do cupido que me acerta</p>
 <p className='text-center font-medium'>Você tira o peso que eu já senti carregando o mundo nas costas, guardar meus sentimentos e não contar pra quem me cerca</p>
-<p className='text-center font-medium'>Não acreditava mais sei que é a pessoa certa, é tão fácil de amar... E Realmente "ao toque do amor, todos se tornam poetas"</p>
+<p className='text-center font-medium'>Não acreditava mais sei que é a pessoa certa, é tão fácil de amar... E Realmente ao toque do amor, todos se tornam poetas</p>
 <p className='text-center font-medium'>Natalie você é uma obra que da Vinci não conseguiria reproduzir, e acho que assim como ele fazia, quero te observar até o fim do meu tempo</p>
 <p className='text-center font-medium'>Você é a razão da clareza e evolução do meu pensamento, quero melhorar todos os dias pra ser seu 100 porcento</p>
 <p className='text-center font-medium'>Não há lavagem cerebral ou labirintos que me façam te perder do meu pensamento. Eu te amo pra ontem, pra hoje, pra amanhã... Todo momento.</p>
@@ -64,7 +64,7 @@ const about = () => {
             <p className='text-center font-medium'>Com a força de uma leoa e ao mesmo tempo a delicadeza de uma rosa</p>
             <p className='text-center font-medium'>Cada pétala sua importa, cada caminho</p>
             <p className='text-center font-medium'>Acredite ou não mas não me importo com cada espinho</p>
-            <p className='text-center font-medium'>Por você Gun's&Roses largaria armas e o rock pra fazer love songs num beat lofi</p>
+            <p className='text-center font-medium'>Por você Gun s&Roses largaria armas e o rock pra fazer love songs num beat lofi</p>
             <p className='text-center font-medium'>Sei o quanto é difícil levantar todas as manhãs, imagino o quão péssimo é não se sentir seguro ao andar</p>
             <p className='text-center font-medium'>Porém quero ser seu porto seguro ao chegar, lamento as vezes não conseguir o estresse estraga minha situação</p>
             <p className='text-center font-medium'>A realidade é que eu não me sinto seguro com a vida e suas palavras de amor são minha única garantia de proteção</p>
@@ -98,7 +98,7 @@ const about = () => {
             <p className='text-center font-medium'>Porque em pouco tempo, é como se você transformasse 10 reais em um milhão</p>
             <p className='text-center font-medium'>Você é toda a riqueza que eu quero ter nas mãos</p>
             <p className='text-center font-medium'>Chegar em casa e provar até a azeitona no seu macarrão</p>
-            <p className='text-center font-medium'>Olhar pra você, te dar um beijo e pensar... "porra, que mulherão"</p>
+            <p className='text-center font-medium'>Olhar pra você, te dar um beijo e pensar... porra, que mulherao</p>
             <p className='text-center font-medium'>Você é a dama da lei com quem eu quero construir minha trajetória</p>
             <p className='text-center font-medium'>A que vai enxergar minhas derrotas e vitórias</p>
             <p className='text-center font-medium'>E vai ser a vitória mais bonita da minha história</p>
